@@ -1,0 +1,31 @@
+# Ignore all .env files everywhere
+docker/.env
+**/.env
+
+.data
+**.meta
+
+# Ignore MinIO internal metadata and temp files
+docker/.data/minio/.minio.sys/**/xl.meta
+docker/.data/minio/.minio.sys/**/list.bin
+docker/.data/minio/.minio.sys/**/.bloomcycle.bin/**
+docker/.data/minio/.minio.sys/tmp/
+docker/.data/minio/.minio.sys/tmp/**
+
+
+# Ignore all logs directories
+logs/
+**/logs/
+.idea
+# Ignore Git attributes files
+.gitattributes
+**/.gitattributes
+
+# Node.js specific (if using Node)
+node_modules/
+dist/
+build/
+
+# OS-specific
+.DS_Store
+Thumbs.db
