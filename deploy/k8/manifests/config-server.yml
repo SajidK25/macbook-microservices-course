@@ -79,9 +79,9 @@ spec:
       volumes:
       - name: config-volume
         hostPath:
-          path: /home/vagrant/macbook-microservices-course/configserver/src/main/resources/config
+          path: /path/to/configserver/src/main/resources/config
 ---
-apiVolume: v1
+apiVersion: v1
 kind: Service
 metadata:
   name: config-server
