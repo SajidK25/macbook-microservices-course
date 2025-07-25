@@ -24,6 +24,10 @@ spec:
       labels:
         app: config-server
     spec:
+      tolerations:
+      - key: "node-role.kubernetes.io/control-plane"
+        operator: "Exists"
+        effect: "NoSchedule"
       containers:
       - name: config-server
         image: bluewhale007/configserver:latest
