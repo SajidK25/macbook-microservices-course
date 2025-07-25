@@ -33,9 +33,9 @@ spec:
         image: bluewhale007/configserver:latest
         resources:
           limits:
-            memory: "700Mi"
-          requests:
             memory: "500Mi"
+          requests:
+            memory: "300Mi"
         env:
         - name: SPRING_PROFILES_ACTIVE
           valueFrom:
